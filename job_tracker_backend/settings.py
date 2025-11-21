@@ -166,12 +166,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:5173",  # Vite default port
     "http://127.0.0.1:5173",
+    "https://job-tracker-frontend-eta-topaz.vercel.app",
 
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     'https://*.onrender.com',
     'https://*.vercel.app',
+    'https://job-tracker-frontend-eta-topaz.vercel.app',
 ]
 CORS_ALLOW_CREDENTIALS = True
 
