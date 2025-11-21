@@ -12,10 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 import dj_database_url
 
-# Add this after SECRET_KEY
-RENDER_EXTERNAL_URL = os.environ.get('RENDER_EXTERNAL_URL')
-if RENDER_EXTERNAL_URL:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_URL)
+
 
 
 from pathlib import Path
@@ -34,6 +31,9 @@ SECRET_KEY = 'django-insecure-nprukiz6vdx)c_+oxlevov=6xuawcivd165pz3h^f+qn_!-s8+
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.onrender.com', '.vercel.app']
+RENDER_EXTERNAL_URL = os.environ.get('RENDER_EXTERNAL_URL')
+if RENDER_EXTERNAL_URL:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_URL)
 
 
 # Application definition
