@@ -108,12 +108,13 @@ else:
     # Local Development
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'job_tracker_db',
-            'USER': 'root',
-            'PASSWORD': 'faith',
-            'HOST': 'localhost',
-            'PORT': '3306',
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+            # 'NAME': 'job_tracker_db',
+            # 'USER': 'root',
+            # 'PASSWORD': 'faith',
+            # 'HOST': 'localhost',
+            # 'PORT': '3306',
         }
     }
 
